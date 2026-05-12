@@ -43,15 +43,28 @@
   },
   "keywords": [
     "chaicorecss",
+    "css",
     "utility-css",
-    "dom",
+    "runtime-css",
+    "frontend",
+    "styling",
+    "css-framework",
+    "utility-framework",
     "javascript",
     "vite"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abishek-ydv/chaicorecss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abishek-ydv/chaicorecss/issues"
+  },
+  "homepage": "https://chaicore.abishekyadav.in",
   "publishConfig": {
     "access": "public"
   },
-  "author": "",
+  "author": "abishek-ydv",
   "license": "MIT",
   "devDependencies": {
     "jsdom": "^26.1.0",

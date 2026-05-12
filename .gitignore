@@ -6,3 +6,10 @@ package-lock.json
 *.log
 .env
 .env.*
+*.tgz
+*.tar.gz
+
+# Local README drafts
+README-Package*
+ReadMe-Package*
+readme-package*

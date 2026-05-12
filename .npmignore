@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+
+# Tests and coverage
+test/
+tests/
+coverage/
+*.test.js
+*.spec.js
+
+# Local development and build tooling
+vite.config.js
+vitest.config.js
+*.config.js
+*.config.mjs
+
+# Non-package app/site files
+src/
+public/
+docs/
+dist/
+
+# Developer-only docs
+README-Developer*
+ReadMe-Developer*
+readme-developer*
+
+# Workspace and install artifacts
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+*.tgz
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment and editor files
+.env
+.env.*
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS metadata
+.DS_Store
+Thumbs.db
