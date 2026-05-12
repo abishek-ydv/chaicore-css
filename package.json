@@ -1,0 +1,61 @@
+{
+  "name": "chaicorecss",
+  "version": "1.0.0",
+  "description": "A lightweight utility-first CSS runtime that turns chai-* classes into inline styles.",
+  "type": "module",
+  "private": false,
+  "main": "./dist-package/chaicorecss.js",
+  "module": "./dist-package/chaicorecss.js",
+  "types": "./lib/chai-core-css.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/chai-core-css.d.ts",
+      "import": "./dist-package/chaicorecss.js",
+      "default": "./dist-package/chaicorecss.js"
+    },
+    "./auto": {
+      "types": "./lib/auto.d.ts",
+      "import": "./dist-package/auto.js",
+      "default": "./dist-package/auto.js"
+    },
+    "./source": {
+      "types": "./lib/chai-core-css.d.ts",
+      "import": "./lib/chai-core-css.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist-package",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "./dist-package/auto.js",
+    "./lib/auto.js"
+  ],
+  "scripts": {
+    "build": "vite build --config vite.config.js",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run test && npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "chaicorecss",
+    "utility-css",
+    "dom",
+    "javascript",
+    "vite"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jsdom": "^26.1.0",
+    "vite": "^6.3.5",
+    "vitest": "^3.1.3"
+  }
+}
